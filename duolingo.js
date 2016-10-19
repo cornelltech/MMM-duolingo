@@ -34,15 +34,17 @@ Module.register("duolingo",{
     start: function() {
         Log.log(this.name + ' started!');
 
-        this.fetchProfile('whothat')
-            .then(function(profile){
-                console.log("update");
-                console.log(profile);
-                self.updateDom();
-            })
-            .catch(function(e){
-                console.log(e);
-            });
+        Log.log('Look at me!');
+
+        // this.fetchProfile('whothat')
+        //     .then(function(profile){
+        //         console.log("update");
+        //         console.log(profile);
+        //         self.updateDom();
+        //     })
+        //     .catch(function(e){
+        //         console.log(e);
+        //     });
     },
 
 	// Override dom generator.
